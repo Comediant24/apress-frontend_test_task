@@ -2,11 +2,55 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
     <main class="product-listing-wrapper">
     </main>
+    <div class="container">
+      <div class="shop">
+
+      </div>
+      <div class="popup" id="popup__order">
+        <div class="popup-container">
+            <div class="popup-body">
+                <p class="popup-body__title"></p>
+                
+                <div class="popup-info">
+                    <div class="popup-info__order">
+                        <div class="popup__img"></div>
+                        <div class="popup__price"></div>
+                    </div>
+                    <form action="" class="popup-form">
+                        <span class="form__title">Комментарий к заказу:</span>
+                        <textarea name="orderComment" class="form__textarea"></textarea>
+                    </form>
+                </div>
+                <div class="popup-submit">
+                    <p>Ваш телефон *: <div class="popup-submit__buttons">
+                        <input type="number" name="tel" class="form__phone" placeholder="+7(000)-000-00-00"
+                        >
+                        <input type="submit" value ="Отправить" class="button button-red popup-form__submit ">
+                    </div> 
+                </div>
+                <div class="popup__close">&#10006</div>
+            </div>
+        </div>
+    </div>
+    <div class="cart" id="cart__order">
+        <div class="cart-container">
+            <div class="cart-body">
+                <div class="cart__title">Вы добавили в корзину:</div>
+                <div class="cart__item">
+                    
+                </div>
+                <a href="##" class="button button-red cart__button"> Перейти в корзину</a>
+                <div class="cart__close">&#10006</div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="api/products.js"></script>
   </body>
