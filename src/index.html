@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-  </head>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Пример веб-страницы</title>
+      <link rel="stylesheet" href="index.css">
+   </head>
+   <body class="body">
+      <header class="header">
+         <div class="header__title">
+            МАГАЗИН N
+         </div>
+         <div class="header__basket">
+            Корзина
+         </div>
+      </header>
+      <main class="main" >
+        <script type="module">
+            import API from "./API.js"
+            document.querySelector('.main').innerHTML = API.products.map(el => 
+                  `<div class="main__item" >
+                   <div class="item__img">
+                     <img src=${el.img} alt="" class="img">
+                  </div>
+                  <div class="item__info">
+                     <div class="item__info_name"> 
+                        ${el.title}
+               </div>
+               <div class="item__info_price">
+                  ${el.price} руб.
+               </div>
+            </div>
+            <div class="item__btns">
+               <div class="item__btns_order">
+                  <button class="btn__order btn red">
+                        Заказать
+                  </button>
+               </div>
+               <div class="item__btns_basket">
+                  <button class="btn__basket btn">
+                     В корзину
+                  </button>
+               </div>
+            </div>
+            <div>
 
-  <body>
-    <main class="product-listing-wrapper">
-    </main>
+            </div>
+         </div>`
+                        ).join('')
+         </script>
+         <script defer src="index.js"></script>
+      </main>
 
-    <script src="api/products.js"></script>
-  </body>
+      <div class="popup__order invisibility">
+         <div class="popup__order_title">
+            
+         </div>
+         <div class="popup__order_info">
+            <div class="order__info_left">
+               <div class="info__left_img">
+                  <img src="" alt="" class="order_img">
+               </div>
+               <div class="info__left_price"> 
+                  Price
+               </div>   
+            </div>
+            <div class="order__info_right">
+               <label  class="info__right_label">
+                  Комментарий к заказу: 
+               </label>
+               <textarea  class="info__right_input"> </textarea>
+            </div>
+         </div>
+
+
+         <div class="popup__order_submit">
+            <div class="order__submit_phone">
+               <label class="submit__phone_label"> Ваш телефон*:</label>
+               <input class="submit__phone_input" type="text">
+            </div>
+            <div class="order__submit_btn">
+               <button class="btn red">
+                  Отправить
+               </button>
+            </div>
+         </div>
+         <img src="assets/closeRed.png" class="close">
+      </div>
+
+      <div class="popup__basket invisibility">
+         <div class="popup__basket_title">
+            Вы добавили в корзину:
+         </div>
+         <div class="popup__basket_info">
+            <div class="basket__info_img">
+               <img src="" alt="" class="basket_img">
+            </div>
+            <div class="basket__info_info">
+               <div class="info__info_title">
+                  title
+               </div>
+               <div class="info__info_price">
+                  price
+               </div>
+            </div>
+         </div>
+         <div class="popup__basket_btn">
+            <button class="basket_btn">
+               Перейти в корзину
+            </button>
+         </div>
+      </div>
+   </body>
 </html>
