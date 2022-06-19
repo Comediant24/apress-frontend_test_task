@@ -1,0 +1,133 @@
+.skelet {
+	z-index: 1;
+	padding: 20px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: var(--white);
+
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: show 0.6s ease-in-out forwards;
+}
+
+.skelet:nth-child(1) {
+	animation: show 0.6s ease-in-out forwards 0.3s; 
+}
+
+.skelet:nth-child(2) {
+	animation: show 0.6s ease-in-out forwards 0.6s; 
+}
+
+.skelet:nth-child(3) {
+	animation: show 0.6s ease-in-out forwards 0.9s; 
+}
+
+.skelet:nth-child(4) {
+	animation: show 0.6s ease-in-out forwards 1.2s; 
+}
+
+.skelet:nth-child(5) {
+	animation: show 0.6s ease-in-out forwards 1.5s; 
+}
+
+.skelet--hidden {
+	/* display: none; */
+	transform: translateY(-10px);
+	opacity: 0;
+}
+
+.skelet__img {
+	z-index: -1;
+	width: 170px;
+	height: 170px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	background-color: var(--greyCB);
+}
+
+.skelet__description {
+	width: 100%;
+	padding: 0 20px;
+	color: var(--grey63);
+}
+
+.skelet__name {
+	width: 100%;
+	height: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: var(--greyCB);
+}
+
+.skelet_price {
+	width: 30%;
+	height: 15px;
+	border-radius: 5px;
+	background-color: var(--greyCB);
+}
+
+.skelet__btns {
+	margin-left: auto;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.skelet__btn {
+	border: none;
+	width: 130px;
+	height: 30px;
+	margin-bottom: 22px;
+	border-radius: 5px;
+	background-color: var(--greyCB);
+}
+
+.skelet__btn:last-child {
+	margin-bottom: 0;
+}
+
+.skelet::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	mix-blend-mode: overlay;
+	animation-name: horizontalGradient;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	background: linear-gradient(to right,
+			#dddddd 5%,
+			#747474 20%,
+			#dddddd 30%);
+	background-size: 50%;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes horizontalGradient {
+	0% {
+		background-position: -100% 0;
+	}
+
+	100% {
+		background-position: 100% 0;
+	}
+}

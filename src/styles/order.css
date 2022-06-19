@@ -1,0 +1,108 @@
+.order {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	width: 70%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: var(--white);
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.order__title {
+	color: var(--grey47);
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.order__body {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.order__goods {
+	padding-right: 60px;
+	border-right: 4px solid var(--red);
+}
+
+.order__price {
+	display: flex;
+	align-items: center;
+	color: var(--red);
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.order__comment {
+	flex-grow: 1;
+	margin-left: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.order__comment label {
+	margin-right: 10px;
+	color: var(--grey23);
+	font-size: 15px;
+	font-weight: 500;
+	flex-shrink: 0;
+	text-align: end;
+}
+
+.order__comment textarea {
+	border: none;
+	outline: none;
+	flex-grow: 1;
+	width: 100%;
+	resize: none;
+	font-size: 18px;
+	color: var(--grey23);
+	background-color: var(--greyEE);
+
+}
+
+.order__phone {
+	margin-left: 120px;
+	margin-bottom: 30px;
+}
+
+.order__phone label {
+	margin-right: 10px;
+	color: var(--grey23);
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.order__phone input {
+	padding: 5px 10px;
+	border: none;
+	outline: none;
+	background-color: var(--greyEE);
+}
+
+.order__btn {
+	margin-left: 231px;
+	margin-bottom: 30px;
+	padding: 5px 38px;
+	background-color: var(--red);
+	color: var(--white);
+	font-size: 16px;
+	/* font-weight: 500; */
+	border: none;
+	width: max-content;
+}
+
+.order__close {
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+.order--hide {
+	display: none;
+}

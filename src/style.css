@@ -1,0 +1,34 @@
+@import url('./styles/cart.css');
+@import url('./styles/goods.css');
+@import url('./styles/order.css');
+@import url('./styles/skelet.css');
+
+:root {
+	--red: #CC2157;
+	--white: #fff;
+	--greyCB: #cbcbcb;
+	--greyEE: #eeeeee;
+	--greyАЕ: #aeaeae;
+	--grey91: #919191;
+	--grey63: #636363;
+	--grey47: #474747;
+	--grey23: #232323;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 100px 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+	background-color: #d9d9d9;
+}
+
+.product-listing-wrapper {
+	width: 764px;
+	min-height: 170px;
+	margin: 0 auto;
+}
