@@ -1,0 +1,7 @@
+.page {
+  display: flex;
+  width: 1080px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background-base);
+}

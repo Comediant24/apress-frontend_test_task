@@ -1,3 +1,7 @@
 :root {
   --color-background-base: #fff;
+  --color-background-additional: #919191;
+  --color-background-input: #eeeeef;
+  --color-accent-base: #cc2157;
+  --color-basket-base: #eaeaea;
 }
