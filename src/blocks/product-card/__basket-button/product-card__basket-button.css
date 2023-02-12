@@ -1,0 +1,22 @@
+.product-card__basket-button {
+  width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-text-additional);
+  background-color: var(--color-basket-base);
+  border: none;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.product-card__basket-button:hover {
+  background-color: var(--color-basket-hover);
+}
+
+.product-card__basket-button:focus {
+  background-color: var(--color-basket-focus);
+}

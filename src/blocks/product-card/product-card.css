@@ -1,0 +1,8 @@
+.product-card {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}

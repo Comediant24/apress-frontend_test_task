@@ -1,0 +1,22 @@
+.product-card__order-button {
+  width: 100%;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-background-base);
+  background-color: var(--color-accent-base);
+  border: none;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.product-card__order-button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.product-card__order-button:focus {
+  background-color: var(--color-accent-focus);
+}

@@ -11,3 +11,11 @@
 
 @import url('../blocks/cards/cards.css');
 
+@import url('../blocks/product-card/product-card.css');
+@import url('../blocks/product-card/__photo/product-card__photo.css');
+@import url('../blocks/product-card/__text-container/product-card__text-container.css');
+@import url('../blocks/product-card/__title/product-card__title.css');
+@import url('../blocks/product-card/__cost/product-card__cost.css');
+@import url('../blocks/product-card/__button-container/product-card__button-container.css');
+@import url('../blocks/product-card/__order-button/product-card__order-button.css');
+@import url('../blocks/product-card/__basket-button/product-card__basket-button.css');

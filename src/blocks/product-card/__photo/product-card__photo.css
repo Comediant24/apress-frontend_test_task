@@ -1,0 +1,4 @@
+.product-card__photo {
+  width: 21%;
+  object-fit: contain;
+}

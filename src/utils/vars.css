@@ -3,5 +3,11 @@
   --color-background-additional: #919191;
   --color-background-input: #eeeeef;
   --color-accent-base: #cc2157;
+  --color-accent-hover: #ca4f76;
+  --color-accent-focus: #f2004c;
   --color-basket-base: #eaeaea;
+  --color-basket-hover: #cacaca;
+  --color-basket-focus: #f4f4f4;
+  --color-text-base: #000;
+  --color-text-additional: #666b7a;
 }
