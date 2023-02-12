@@ -1,11 +1,11 @@
-// объявление переменных для работы с карточками 
-const cardsContainer = document.querySelector('.cards'); 
+// объявление переменных для работы с карточками
+const cardsContainer = document.querySelector('.cards');
+const cardTemplate = document.querySelector('#product-card-template').content;
 
-// объявление функций для работы на странице 
-function createCard(titleValue, costValue, photoValue) {  // функция создания карточки 
-  const cardTemplate = document.querySelector('#product-card-template').content;
+// объявление функций для работы на странице
+function createCard(titleValue, costValue, photoValue) {  // функция создания карточки
   const cardElement = cardTemplate.querySelector('.product-card').cloneNode(true);
-  const cardPhoto = cardElement.querySelector('.product-card__photo'); 
+  const cardPhoto = cardElement.querySelector('.product-card__photo');
   cardPhoto.src = photoValue;
   cardPhoto.alt = titleValue;
   cardElement.querySelector('.product-card__title').textContent = titleValue;
