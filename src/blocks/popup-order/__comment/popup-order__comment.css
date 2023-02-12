@@ -1,0 +1,13 @@
+.popup-order__comment {
+  width: 78%;
+  min-height: 115px;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  background-color: var(--color-background-input);
+  transition-duration: .5s;
+  border: none;
+}

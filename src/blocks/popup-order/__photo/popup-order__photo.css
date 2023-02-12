@@ -1,0 +1,5 @@
+.popup-order__photo {
+  width: 100%;
+  height: 128px;
+  object-fit: contain;
+}

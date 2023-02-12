@@ -1,0 +1,5 @@
+.popup-order__form {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+}

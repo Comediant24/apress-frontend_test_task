@@ -1,0 +1,11 @@
+.popup-order__container {
+  display: flex;
+  position: relative;
+  width: 905px;
+  margin: auto auto;
+  padding: 18px 48px 45px 18px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-background-base);
+  box-sizing: border-box;
+}

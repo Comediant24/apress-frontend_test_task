@@ -1,0 +1,9 @@
+.popup-order__phone-label {
+  display: flex;
+  width: 325px;
+  margin: 20px auto 30px -140px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}

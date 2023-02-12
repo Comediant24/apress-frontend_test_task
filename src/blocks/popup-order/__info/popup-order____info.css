@@ -1,0 +1,6 @@
+.popup-order__info {
+  display: flex;
+  width: 19%;
+  flex-direction: column;
+  row-gap: 15px;
+}

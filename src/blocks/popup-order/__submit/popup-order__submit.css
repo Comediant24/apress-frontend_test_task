@@ -1,0 +1,22 @@
+.popup-order__submit {
+  width: 185px;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-background-base);
+  background-color: var(--color-accent-base);
+  border: none;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.popup-order__submit:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.popup-order__submit:focus {
+  background-color: var(--color-accent-focus);
+}
