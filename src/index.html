@@ -22,24 +22,26 @@
   <footer class="footer">
 
   </footer>
-  <div class="popup popup-basket">
+  <div class="popup-basket">
     <div class="popup-basket__container">
     </div>
   </div>
-  <div class="popup popup-order">
+  <div class="popup-order popup-order_opened">
     <div class="popup-order__container">
-      <h2 class="popup-order__title"></h2>
+      <h2 class="popup-order__title">Некий диван со своим индексом</h2>
       <div class="popup-order__info">
         <img class="popup-order__photo" src="../assets/images/1.jpg" alt="" />
-        <p class="popup-order__cost">стоимость</p>
-        <p class="popup-order__phone-label">Ваш телефон *:</p>
+        <p class="popup-order__cost">205000 руб.</p>
       </div>
       <form class="popup-order__form">
         <div class="popup-order__comment-container">
           <label class="popup-order__comment-label">Комментарий к заказу:</label>
           <textarea class="popup-order__comment" name="comment"></textarea>
         </div>
-        <input class="popup-order__input" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <label class="popup-order__phone-label">
+          Ваш телефон *:
+          <input class="popup-order__input" name="phone" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+        </label>
         <button class="popup-order__submit" type="submit">Отправить</button>
       </form>
       <button class="popup-order__close" type="button"></button>
