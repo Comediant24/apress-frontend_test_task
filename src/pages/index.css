@@ -37,6 +37,7 @@
 @import url('../blocks/popup-order/__close/popup-order__close.css');
 
 @import url('../blocks/popup-basket/popup-basket.css');
+@import url('../blocks/popup-basket/_opened/popup-basket_opened.css');
 @import url('../blocks/popup-basket/__caption/popup-basket__caption.css');
 @import url('../blocks/popup-basket/__photo/popup-basket__photo.css');
 @import url('../blocks/popup-basket/__info/popup-basket__info.css');

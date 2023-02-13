@@ -1,0 +1,8 @@
+.popup-basket__info {
+  display: flex;
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  flex-direction: column;
+  row-gap: 10px;
+}

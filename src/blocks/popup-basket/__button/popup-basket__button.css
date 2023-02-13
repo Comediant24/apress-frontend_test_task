@@ -1,0 +1,21 @@
+.popup-basket__button {
+  margin: 30px auto 20px 20px;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-background-base);
+  background-color: var(--color-accent-base);
+  border: none;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.popup-basket__button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.popup-basket__button:focus {
+  background-color: var(--color-accent-focus);
+}

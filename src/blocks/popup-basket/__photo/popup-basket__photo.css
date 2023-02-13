@@ -1,0 +1,6 @@
+.popup-basket__photo {
+  width: 40%;
+  height: 104px;
+  margin: auto;
+  object-fit: contain;
+}

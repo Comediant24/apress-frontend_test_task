@@ -1,0 +1,16 @@
+.popup-basket {
+  display: flex;
+  width: 338px;
+  min-height: 240px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--color-background-base);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .2s, opacity .2s;
+  z-index: 2;
+}

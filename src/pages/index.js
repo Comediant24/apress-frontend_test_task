@@ -54,6 +54,11 @@ API.products.forEach((card) => { // заполнение начальными к
   addCard(card.title, card.price, img);
 });
 
-popupOrderClose.addEventListener('click', () => { // закрывать всплывающее окно с заказом при нажатии на крестик
-  closePopup();
+popupOrder.addEventListener('mousedown', (evt) => { // закрывать всплывающее окно с заказом при нажатии на крестик или тёмный фон
+  if (evt.target.classList.contains('popup-order_opened')) {
+    closePopup();
+  };
+  if (evt.target.classList.contains('popup-order__close')) {
+    closePopup();
+  };
 });
