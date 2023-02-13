@@ -14,26 +14,26 @@ const popupBasketTitle = popupBasket.querySelector('.popup-basket__title');
 const popupBasketPhoto = popupBasket.querySelector('.popup-basket__photo');
 const popupBasketCost = popupBasket.querySelector('.popup-basket__cost');
 
-const createCard =(info, cardSelector) => {
+const createCard = (info, cardSelector) => {
   const card = new ProductCard(
     info,
     cardSelector,
-    () => {   // открывать всплывающее окно с заказом при нажатие на кнопку "Заказать"
+    () => { // открывать всплывающее окно с заказом при нажатие на кнопку "Заказать"
       openPopupOrder(info.title, info.cost, info.photo);
     },
-    () => {   // добавлять товар в корзину при нажатии на кнопку "В корзину"
+    () => { // добавлять товар в корзину при нажатии на кнопку "В корзину"
       openPopupBasket(info.title, info.cost, info.photo);
     }
   );
   return card.createCard();
-}
+};
 
 const addCard = (info, cardSelector) => { // функция создания и добавления карточки в разметку
   const cardElement = createCard(info, cardSelector);
   cardsContainer.prepend(cardElement);
 };
 
-const openPopupOrder = (titleValue, costValue, photoValue) => {  // функция для открытия всплывающего окна
+const openPopupOrder = (titleValue, costValue, photoValue) => { // функция для открытия всплывающего окна
   popupOrder.classList.add('popup-order_opened');
   popupOrderTitle.textContent = titleValue;
   popupOrderCost.textContent = costValue;
@@ -49,13 +49,13 @@ const closePopup = () => {
   document.removeEventListener('keydown', closeByEscape);
 };
 
-const closeByEscape = (evt) => {   // закрытие всплывающего окна нажатием на клавишу "Escape"
+const closeByEscape = (evt) => { // закрытие всплывающего окна нажатием на клавишу "Escape"
   if (evt.key === 'Escape') {
     closePopup(popupOrder);
   };
 };
 
-const openPopupBasket = (titleValue, costValue, photoValue) => {  // функция для открытия корзины
+const openPopupBasket = (titleValue, costValue, photoValue) => { // функция для открытия корзины
   if (!popupBasket.classList.contains("popup-basket_opened")) {
     popupBasket.classList.add('popup-basket_opened');
   };

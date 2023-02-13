@@ -1,0 +1,19 @@
+.footer__link {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-accent-base);
+  transition-duration: .5s;
+}
+
+.footer__link:hover {
+  color: var(--color-accent-hover);
+}
+
+.footer__link:focus {
+  color: var(--color-accent-focus);
+}
