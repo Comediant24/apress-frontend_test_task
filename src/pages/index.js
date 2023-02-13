@@ -1,46 +1,35 @@
 // объявление переменных для работы с карточками
 const cardsContainer = document.querySelector('.cards');
-const cardTemplate = document.querySelector('#product-card-template').content;
+const cardTemplateSelector = '#product-card-template';
 
 // объявление переменных для всплывающих окон
 const popupOrder = document.querySelector('.popup-order'); // всплывающее окно с заказом
 const popupOrderTitle = popupOrder.querySelector('.popup-order__title');
 const popupOrderPhoto = popupOrder.querySelector('.popup-order__photo');
 const popupOrderCost = popupOrder.querySelector('.popup-order__cost');
+const popupOrderComment = popupOrder.querySelector('.popup-order__comment');
+const popupOrderPhone = popupOrder.querySelector('.popup-order__input');
 const popupBasket = document.querySelector('.popup-basket'); // всплывающее окно с корзиной
 const popupBasketTitle = popupBasket.querySelector('.popup-basket__title');
 const popupBasketPhoto = popupBasket.querySelector('.popup-basket__photo');
 const popupBasketCost = popupBasket.querySelector('.popup-basket__cost');
 
-// объявление функций для работы на странице
-const createCard = (titleValue, costValue, photoValue) => {  // функция создания карточки
-  const cardElement = cardTemplate.querySelector('.product-card').cloneNode(true);
-  const cardPhoto = cardElement.querySelector('.product-card__photo');
-  cardPhoto.src = photoValue;
-  cardPhoto.alt = titleValue;
-  cardElement.querySelector('.product-card__title').textContent = titleValue;
-  let cost;
-  if (costValue / 1000 > 1) {
-    if (costValue % 1000 !== 0) {
-      cost = `${(costValue - costValue % 1000) / 1000} ${costValue % 1000} руб.`;
-    } else {
-      cost = `${(costValue - costValue % 1000) / 1000} 000 руб.`;
-    };
-  } else {
-    cost = `${costValue} руб.`;
-  };
-  cardElement.querySelector('.product-card__cost').textContent = cost;
-  cardElement.querySelector('.product-card__order-button').addEventListener('click', () => {   // открывать всплывающее окно с заказом при нажатие на кнопку "Заказать"
-    openPopupOrder(titleValue, cost, photoValue);
-  });
-  cardElement.querySelector('.product-card__basket-button').addEventListener('click', () => {   // добавлять товар в корзину при нажатии на кнопку "В корзину"
-    openPopupBasket(titleValue, cost, photoValue);
-  });
-  return cardElement;
-};
+const createCard =(info, cardSelector) => {
+  const card = new ProductCard(
+    info,
+    cardSelector,
+    () => {   // открывать всплывающее окно с заказом при нажатие на кнопку "Заказать"
+      openPopupOrder(info.title, info.cost, info.photo);
+    },
+    () => {   // добавлять товар в корзину при нажатии на кнопку "В корзину"
+      openPopupBasket(info.title, info.cost, info.photo);
+    }
+  );
+  return card.createCard();
+}
 
-const addCard = (titleValue, costValue, photoValue) => { // функция создания и добавления карточки в разметку
-  const cardElement = createCard(titleValue, costValue, photoValue);
+const addCard = (info, cardSelector) => { // функция создания и добавления карточки в разметку
+  const cardElement = createCard(info, cardSelector);
   cardsContainer.prepend(cardElement);
 };
 
@@ -54,6 +43,8 @@ const openPopupOrder = (titleValue, costValue, photoValue) => {  // функци
 };
 
 const closePopup = () => {
+  popupOrderComment.value = '';
+  popupOrderPhone.value = '';
   popupOrder.classList.remove('popup-order_opened');
   document.removeEventListener('keydown', closeByEscape);
 };
@@ -75,8 +66,18 @@ const openPopupBasket = (titleValue, costValue, photoValue) => {  // функц�
 };
 
 API.products.forEach((card) => { // заполнение начальными карточками
-  const img = `../${card.img}`;
-  addCard(card.title, card.price, img);
+  let cost;
+  if (card.price / 1000 > 1) {
+    if (card.price % 1000 !== 0) {
+      cost = `${(card.price - card.price % 1000) / 1000} ${card.price % 1000} руб.`;
+    } else {
+      cost = `${(card.price - card.price % 1000) / 1000} 000 руб.`;
+    };
+  } else {
+    cost = `${card.price} руб.`;
+  };
+  const info = {title: card.title, cost: cost, photo: `../${card.img}`};
+  addCard(info, cardTemplateSelector);
 });
 
 popupOrder.addEventListener('mousedown', (evt) => { // закрывать всплывающее окно с заказом при нажатии на крестик или тёмный фон
