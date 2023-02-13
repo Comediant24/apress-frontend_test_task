@@ -16,9 +16,10 @@ const createCard = (titleValue, costValue, photoValue) => {  // функция �
   cardPhoto.src = photoValue;
   cardPhoto.alt = titleValue;
   cardElement.querySelector('.product-card__title').textContent = titleValue;
-  cardElement.querySelector('.product-card__cost').textContent = `${costValue} руб.`;
+  const cost = `${costValue} руб.`;
+  cardElement.querySelector('.product-card__cost').textContent = cost;
   cardElement.querySelector('.product-card__order-button').addEventListener('click', () => {   // открывать всплывающее окно с заказом при нажатие на кнопку
-    openPopupOrder(titleValue, costValue, photoValue);
+    openPopupOrder(titleValue, cost, photoValue);
   });
   return cardElement;
 };

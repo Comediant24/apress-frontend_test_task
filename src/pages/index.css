@@ -35,3 +35,12 @@
 @import url('../blocks/popup-order/__input/popup-order__input.css');
 @import url('../blocks/popup-order/__submit/popup-order__submit.css');
 @import url('../blocks/popup-order/__close/popup-order__close.css');
+
+@import url('../blocks/popup-basket/popup-basket.css');
+@import url('../blocks/popup-basket/__caption/popup-basket__caption.css');
+@import url('../blocks/popup-basket/__photo/popup-basket__photo.css');
+@import url('../blocks/popup-basket/__info/popup-basket__info.css');
+@import url('../blocks/popup-basket/__title/popup-basket__title.css');
+@import url('../blocks/popup-basket/__cost/popup-basket__cost.css');
+@import url('../blocks/popup-basket/__close/popup-basket__close.css');
+@import url('../blocks/popup-basket/__button/popup-basket__button.css');
