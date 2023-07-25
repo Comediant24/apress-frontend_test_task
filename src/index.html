@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <main class="main"></main>
+    <div id="popup_basket" data-active="false">
+      <div class="basket">
+        <div class="basket_header">
+          <span>Вы добавили в коризну:</span>
+        </div>
+        <div class="basket_content"></div>
+      </div>
+    </div>
+    <div id="popup_product" data-active="false"></div>
+  </div>
 </body>
+<script type="module" src="./js/app.js"></script>
+
 </html>
