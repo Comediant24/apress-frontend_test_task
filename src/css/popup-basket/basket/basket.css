@@ -1,0 +1,6 @@
+.basket__header {
+  font-size: 1.5rem;
+  color: white;
+  padding: 20px 20px;
+  background-color: var(--grey-light-color);
+}

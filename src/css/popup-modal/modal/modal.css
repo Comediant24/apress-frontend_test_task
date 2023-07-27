@@ -1,0 +1,85 @@
+.modal {
+  position: relative;
+  width: 60vw;
+  background-color: white;
+  border-radius: 5px;
+  padding: 18px 18px 50px 18px;
+}
+
+.modal__header {
+  font-size: 2.2rem;
+  margin: 0px 0px 30px 0px;
+}
+
+.modal__columns {
+  display: flex;
+  margin-bottom: 20px;
+}
+.modal__left {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.modal__img {
+  max-width: 300px;
+}
+
+.modal__price {
+  font-size: 2rem;
+  margin-left: 10px;
+  color: var(--purple-color);
+}
+
+.modal__right {
+  width: 100%;
+  display: flex;
+  text-align: right;
+  border-left: 5px solid var(--purple-color);
+  padding-left: 15px;
+  font-size: 1.7rem;
+  flex-grow: 2;
+}
+
+.modal__textarea {
+  width: 80%;
+  height: 60%;
+  resize: none;
+  margin-left: 20px;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+
+.modal__form {
+  display: flex;
+  font-size: 1.7rem;
+}
+
+.modal__text {
+  text-align: right;
+  padding-right: 20px;
+  flex-basis: 300px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+.modal__btn {
+  background-color: var(--purple-color);
+  padding: 5px 35px;
+  color: white;
+  width: max-content;
+}
