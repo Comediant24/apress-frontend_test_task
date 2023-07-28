@@ -1,0 +1,154 @@
+.order-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.order-wrapper_visible{
+    display: none;
+}
+@keyframes scale-up-top {
+    0% {
+        transform: scale(0.5);
+        transform-origin: 50% 0;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 0;
+    }
+}
+
+.order {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    border: 3px solid lightgrey;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.order__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-close-grey{
+    color: lightgrey;
+}
+.close {
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.order__about {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 400px ) {
+    .order__about {
+        flex-direction: column;
+    }
+}
+
+.order__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.order__price {
+    color: crimson;
+    font-size: 20px;
+}
+
+.order__details {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.order__comment {
+    border-left: 3px solid crimson;
+    padding-left: 15px;
+    padding-right: 25px;
+    display: flex;
+    align-items: start;
+    gap: 0 10px;
+    padding-bottom: 90px;
+}
+
+@media screen and (max-width: 500px ) {
+    .order__comment {
+        flex-direction: column;
+    }
+}
+
+.label {
+    font-weight: 600;
+}
+
+.comment-textarea {
+    width: 100%;
+    resize: none;
+    display: block;
+    background-color: lightgrey;
+    border: none;
+    min-height: 130px;
+}
+
+.input-phone {
+    background-color: lightgrey;
+    border: none;
+    min-height: 25px;
+    max-width: 150px;
+    width: 100%;
+}
+
+.order__phone {
+    position: relative;
+}
+
+.order__phone::before {
+    content: 'Ваш телефон *:';
+    position: absolute;
+    left: -130px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 500px ) {
+    .comment-textarea {
+        flex: none;
+        width: 100%;
+    }
+
+    .order__comment {
+        padding-bottom: 0;
+    }
+
+    .order__phone::before {
+        left: 0;
+        top: -20px;
+        font-weight: 600;
+    }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

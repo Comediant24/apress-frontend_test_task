@@ -1,0 +1,92 @@
+@import url("order-modalWindow.css");
+@import url("cart-modalWindow.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+button {
+    background: none;
+    border: none;
+    display: inline-block;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    gap: 0 30px;
+    padding: 20px;
+}
+
+.item__img-block {
+}
+
+.img-product {
+    width: 100%;
+    max-width: 170px;
+    min-width: 130px;
+    height: 170px;
+}
+
+.item__desc {
+    flex: 1 1 40%;
+}
+
+.desc {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+.title {
+    font-weight: 700;
+    word-wrap: anywhere;
+}
+
+.desc__price {
+    font-weight: 700;
+}
+
+.item__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px 0;
+}
+
+.btn-red {
+    background-color: crimson;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btn-grey {
+    background-color: lightgrey;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        flex-direction: column;
+    }
+}
+
+
+
