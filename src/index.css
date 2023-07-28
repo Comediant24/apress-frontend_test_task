@@ -1,0 +1,70 @@
+/* Шрифты и нормализатор */
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts.css");
+
+/* Тело */
+@import url("./blocks/body/body.css");
+
+/* шапка и кнопки */
+@import url("./blocks/header/header.css");
+@import url("./blocks/navigate/navigate.css");
+@import url("./blocks/navigate/__item/navigate__item.css");
+@import url("./blocks/navigate/__items/navigate__items.css");
+@import url("./blocks/navigate/__paragraph/navigate__paragraph.css");
+@import url("./blocks/navigate/__button/navigate__button.css");
+@import url("./blocks/navigate/__img/navigate__img.css");
+@import url("./blocks/navigate/__link/navigate__link.css");
+
+/* основное */
+@import url("./blocks/main/main.css");
+
+@import url("./blocks/home-items/home-items.css");
+@import url("./blocks/home-items/__title/home-items__title.css");
+
+@import url("./blocks/furniture-items/furniture-items.css");
+
+@import url("./blocks/furniture/furniture.css");
+@import url("./blocks/furniture/__buttons/furniture__buttons.css");
+@import url("./blocks/furniture/__img/furniture__img.css");
+@import url("./blocks/furniture/__paragraph/furniture__paragraph.css");
+@import url("./blocks/furniture/__text/furniture__text.css");
+@import url("./blocks/furniture/__price/furniture__price.css");
+@import url("./blocks/furniture/__button-order/furniture__button-order.css");
+@import url("./blocks/furniture/__button-basket/furniture__button-basket.css");
+
+/* Подвал */
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__contacts/footer__contacts.css");
+@import url("./blocks/footer/__paragraph/footer__paragraph.css");
+@import url("./blocks/footer/__info/footer__info.css");
+
+/* Попапы */
+@import url("./blocks/popup/popup.css");
+@import url("./blocks/popup/_opened/popup_opened.css");
+
+@import url("./blocks/popup/__order/popup__order.css");
+@import url("./blocks/popup/__close/popup__close.css");
+@import url("./blocks/popup/__comment-input/popup__comment-input.css");
+@import url("./blocks/popup/__comment/popup__comment.css");
+@import url("./blocks/popup/__form/popup__form.css");
+@import url("./blocks/popup/__img/popup__img.css");
+@import url("./blocks/popup/__item-info/popup__item-info.css");
+@import url("./blocks/popup/__order-container/popup__order-container.css");
+@import url("./blocks/popup/__paragraph/popup__paragraph.css");
+@import url("./blocks/popup/__phone-number/popup__phone-number.css");
+@import url("./blocks/popup/__price/popup__price.css");
+@import url("./blocks/popup/__title/popup__title.css");
+@import url("./blocks/popup/__number-input/popup__number-input.css");
+@import url("./blocks/popup/__order-button/popup__order-button.css");
+
+@import url("./blocks/popup/__basket-container/popup__basket-container.css");
+@import url("./blocks/popup/__basket-title/popup__basket-title.css");
+@import url("./blocks/popup/__basket-button/popup__basket-button.css");
+@import url("./blocks/popup/__basket-img/popup__basket-img.css");
+@import url("./blocks/popup/__basket-item/popup__basket-item.css");
+@import url("./blocks/popup/__basket-items/popup__basket-items.css");
+@import url("./blocks/popup/__basket-text-paragraph/popup__basket-text-paragraph.css");
+@import url("./blocks/popup/__basket-text-num/popup__basket-text-num.css");
+@import url("./blocks/popup/__basket-text-title/popup__basket-text-title.css");
+@import url("./blocks/popup/__basket-text/popup__basket-text.css");
+@import url("./blocks/popup/__basket-item-close/popup__basket-item-close.css");

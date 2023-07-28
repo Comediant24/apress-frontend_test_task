@@ -1,0 +1,16 @@
+.popup__form {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(640px));
+  grid-template-rows: repeat(3, fit-content(400px));
+  grid-template-areas:
+    "title title"
+    "info comment"
+    "send send";
+  gap: 20px;
+  z-index: 3;
+  min-width: 920px;
+  background-color: #fff;
+}

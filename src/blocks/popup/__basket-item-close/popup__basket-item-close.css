@@ -1,0 +1,25 @@
+.popup__basket-item-close {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  min-width: 15px;
+  min-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #d34040;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.popup__basket-item-close:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #d34040;
+  transition: 0.15s;
+}

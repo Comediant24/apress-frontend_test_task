@@ -1,0 +1,10 @@
+.popup__basket-text-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 180px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}

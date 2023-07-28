@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Официальный сайт самых удобных вещей для дома"
+    />
+    <meta name="author" content="Зарипов Айнур" />
+    <title>Магазин для мягкой жизни</title>
+    <link rel="stylesheet" href="./index.css"
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav class="navigate">
+        <ul class="navigate__items">
+          <li class="navigate__item">
+            <a href="#" class="navigate__link">Товары для дома</a>
+          </li>
+          <li class="navigate__item">
+            <button type="button" class="navigate__button">
+              <img
+                src="../images/36656-shopping-basket-in-a-circle.png"
+                alt="Картинка корзины для товаров"
+                class="navigate__img"
+              />
+              <p class="navigate__paragraph">Корзина</p>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home-items" aria-label="Наши товары">
+        <h2 class="home-items__title">Товары для дома</h2>
+        <ul class="furniture-items"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <p class="footer__paragraph">Контакты:</p>
+        <div class="footer__contacts">
+          <p class="footer__paragraph">Почта: mr.ainur.02@mail.ru</p>
+          <p class="footer__paragraph">Телефон: 8(999)-777-66-55</p>
+        </div>
+      </div>
+    </footer>
+    <div class="popup popup__order">
+      <div class="popup__order-container">
+        <form name="ordrer-item" class="popup__form">
+          <button type="button" class="popup__close">x</button>
+          <h3 class="popup__title"></h3>
+          <div class="popup__item-info">
+            <img src="" alt="" class="popup__img" />
+            <p class="popup__price"></p>
+          </div>
+          <fieldset class="popup__comment">
+            <p class="popup__paragraph">
+              Комментарий к заказу:
+              <textarea
+                id="comment"
+                name="user-comment"
+                class="popup__comment-input"
+                placeholder="Напишите комментарий при необходимости"
+                maxlength="320"
+              ></textarea>
+            </p>
+          </fieldset>
+          <fieldset class="popup__phone-number">
+            <p class="popup__paragraph">
+              <label for="comment">
+                Ваш телефон *:
+                <input
+                  type="text"
+                  id="number"
+                  name="user-comment"
+                  class="popup__number-input"
+                  maxlength="12"
+                />
+              </label>
+            </p>
+            <button type="submit" class="popup__order-button">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup__basket">
+      <div class="popup__basket-container">
+        <h2 class="popup__basket-title">Вы добавили в корзину:</h2>
+        <ul class="popup__basket-items"></ul>
+      </div>
+    </div>
+    <template id="furniture">
+      <li class="furniture">
+        <img class="furniture__img" src="" alt="" />
+        <div class="furniture__text">
+          <p class="furniture__paragraph"></p>
+          <p class="furniture__price"></p>
+        </div>
+        <div class="furniture__buttons">
+          <button type="button" class="furniture__button-order" name="order">
+            Заказать
+          </button>
+          <button type="button" class="furniture__button-basket" name="basket">
+            В корзину
+          </button>
+        </div>
+      </li>
+    </template>
+    <template id="basket-item">
+      <li class="popup__basket-item">
+        <button type="button" class="popup__basket-item-close">x</button>
+        <img src="" alt="" class="popup__basket-img" />
+        <div class="popup__basket-text">
+          <h3 class="popup__basket-text-title"></h3>
+          <p class="popup__basket-text-paragraph"></p>
+          <p class="popup__basket-text-num"></p>
+        </div>
+        <button type="button" class="popup__basket-button">
+          Перейти в корзину
+        </button>
+      </li>
+    </template>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./components/Api.js"></script>
+    <script type="module" src="../api/products.js"></script>
+    <script type="module" src="./components/Section.js"></script>
+    <script type="module" src="./utils/constants.js"></script>
+    <script type="module" src="./components/Popup.js"></script>
+    <script type="module" src="./components/PopupOrder.js"></script>
+    <script type="module" src="./components/BasketCard.js"></script>
+  </body>
 </html>

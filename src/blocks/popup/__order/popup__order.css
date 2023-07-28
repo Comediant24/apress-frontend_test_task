@@ -1,0 +1,16 @@
+.popup__order {
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 3;
+}
+
+.popup__order::before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  background-color: #000;
+  opacity: 0.4;
+}

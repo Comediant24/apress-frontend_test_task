@@ -1,0 +1,24 @@
+.popup__basket-items {
+  margin: 20px auto;
+  padding: 0;
+  min-width: 400px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(1, fit-content(190px));
+  grid-template-rows: repeat(1, fit-content(322px));
+  justify-content: center;
+  gap: 20px;
+  max-height: 630px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff3131;
+}

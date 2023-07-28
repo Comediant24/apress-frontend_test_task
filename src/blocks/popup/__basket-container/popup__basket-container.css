@@ -1,0 +1,14 @@
+.popup__basket-container {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  min-width: 400px;
+  min-height: 200px;
+  top: 85px;
+  right: 30px;
+  border: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 3px #000;
+}

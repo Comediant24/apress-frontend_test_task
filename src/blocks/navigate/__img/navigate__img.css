@@ -1,0 +1,8 @@
+.navigate__img {
+  margin: 0;
+  padding: 0;
+  max-width: 40px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 50%;
+}

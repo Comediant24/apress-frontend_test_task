@@ -1,0 +1,8 @@
+.popup__basket-img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 85px;
+  object-fit: contain;
+  grid-area: img;
+}

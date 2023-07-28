@@ -1,0 +1,7 @@
+.furniture__img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  object-fit: contain;
+  grid-area: img;
+}

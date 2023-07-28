@@ -1,0 +1,25 @@
+.popup__close {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  min-width: 15px;
+  min-height: 15px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+}
+
+.popup__close:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #000000;
+  transition: 0.15s;
+}

@@ -1,0 +1,11 @@
+.popup__comment-input {
+  margin: 0 0 0 10px;
+  padding: 5px 5px 100px 5px;
+  color: #000;
+  background-color: rgba(228, 225, 225, 0.911);
+  width: 450px;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+}

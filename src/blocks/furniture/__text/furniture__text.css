@@ -1,0 +1,9 @@
+.furniture__text {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: paragraph;
+}

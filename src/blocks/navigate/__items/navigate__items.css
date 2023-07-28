@@ -1,0 +1,8 @@
+.navigate__items {
+  margin: 0;
+  padding: 0;
+  min-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}

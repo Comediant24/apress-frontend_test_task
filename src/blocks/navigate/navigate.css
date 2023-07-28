@@ -1,0 +1,13 @@
+.navigate {
+  margin: 0;
+  padding: 10px 0;
+  min-width: 100%;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b5b5ff;
+}

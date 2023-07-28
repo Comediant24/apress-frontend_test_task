@@ -1,0 +1,8 @@
+.popup__phone-number {
+  margin: 0;
+  padding: 0 0 0 85px;
+  display: flex;
+  flex-direction: column;
+  grid-area: send;
+  border: none;
+}

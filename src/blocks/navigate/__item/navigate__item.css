@@ -1,0 +1,17 @@
+.navigate__item {
+  margin: 0;
+  padding: 0;
+  border-radius: 40px;
+  max-width: 178px;
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #b5b5ff;
+}
+
+.navigate__item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #33ff00;
+  transition: 0.15s;
+}

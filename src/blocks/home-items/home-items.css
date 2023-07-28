@@ -1,0 +1,8 @@
+.home-items {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

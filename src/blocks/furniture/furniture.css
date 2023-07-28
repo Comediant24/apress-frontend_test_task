@@ -1,0 +1,10 @@
+.furniture {
+  margin: 20px 0 0 0;
+  padding: 0;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(500px));
+  grid-template-rows: repeat(1, fit-content(400px));
+  grid-template-areas: "img paragraph buttons";
+  gap: 20px;
+}

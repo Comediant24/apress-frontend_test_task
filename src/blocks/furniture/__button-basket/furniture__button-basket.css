@@ -1,0 +1,23 @@
+.furniture__button-basket {
+  margin: 12px 0 0 0;
+  padding: 0;
+  min-width: 120px;
+  min-height: 30px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfcfcf;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+  cursor: pointer;
+}
+
+.furniture__button-basket:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #0063e4;
+  transition: 0.15s;
+}

@@ -1,0 +1,22 @@
+.popup__order-button {
+  margin: 15px 0 0 135px;
+  padding: 0;
+  width: 120px;
+  min-height: 30px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d34040;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.popup__order-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #0063e4;
+  transition: 0.15s;
+}

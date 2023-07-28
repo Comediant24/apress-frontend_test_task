@@ -1,0 +1,18 @@
+.popup__basket-item {
+  margin: 0;
+  padding: 20px 0 0 0;
+  max-width: 360px;
+  height: 190px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(180px));
+  grid-template-rows: repeat(2, fit-content(120px));
+  grid-template-areas:
+    "img paragraph"
+    "button button";
+  gap: 10px 20px;
+}
+
+.popup__basket-item:last-of-type {
+  margin-bottom: 20px;
+}
