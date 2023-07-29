@@ -1,0 +1,29 @@
+.item-basket {
+  position: relative;
+  padding: 20px;
+}
+
+.item-basket__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.item-basket__img {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+.item-basket__header {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+.item-basket__btn {
+  background-color: var(--purple-color);
+  color: white;
+  padding: 10px 25px;
+}

@@ -1,0 +1,35 @@
+@import url("./basket/basket-item.css");
+@import url("./basket/basket.css");
+
+.popup-basket {
+  z-index: 2;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  min-width: 250px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #00000036;
+  transition: 0.4s;
+}
+
+.popup-basket[data-active="false"] {
+  transform: translateY(40px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-basket[data-active="true"] {
+  transform: translateY(0px);
+  pointer-events: all;
+  opacity: 1;
+}
+
+.popup-basket::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 50px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 30px solid var(--grey-light-color);
+}

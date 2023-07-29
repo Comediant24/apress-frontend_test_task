@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <main class="main"></main>
+    <div class="popup-basket" data-active="false">
+      <div class="basket">
+        <div class="basket__header">
+          <span>Вы добавили в коризну:</span>
+        </div>
+        <div class="basket__content"></div>
+      </div>
+    </div>
+    <div class="popup-modal" data-active="false">
+      <div class="modal">
+        <button type="button" class="modal__cross">
+          <svg viewBox="0 0 32 32" width="24px">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #a5a5a5;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+            <title />
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </button>
+        <div class="modal__content"></div>
+        <form method="post" class="modal__form">
+          <div class="modal__text">
+            <label for="phone">Ваш телефон*:</label>
+          </div>
+          <div class="modal__content">
+            <input type="text" name="phone" class="modal__input">
+            <button type="button" class="modal__btn">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/app.js"></script>
 </body>
+
 </html>
