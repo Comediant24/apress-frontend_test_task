@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style src="./css/style.css"></style>
-  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/rest.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="../api/products.js"></script>
+  <script defer src="./js/index.js" type="module"></script>
   <title>Product Listing</title>
 </head>
 
 <body>
-  <div id="root"></div>
-  <div id="order-popup" class="popup">
-  </div>
-  <div id="cart-notification" class="success-notification">
+  <div id="root">
+    <ul class="products"></ul>
+    <div id="order-popup" class="popup"></div>
+    <div id="cart-notification" class="success-notification"></div>
   </div>
 </body>
+
 
 </html>
