@@ -1,3 +1,14 @@
+import { getProductById } from '../utils/getProductById.js'
+import { createPopupEl } from './popup.js'
+
+async function openOrderPopup(id) {
+  const product = await getProductById(id)
+  console.log(product)
+  if (product) {
+    createPopupEl(product)
+  }
+}
+
 export function createProductEl(product) {
   const productEl = document.createElement('li')
   const price = new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format(
