@@ -1,11 +1,18 @@
 import { getProductById } from '../utils/getProductById.js'
-import { createPopupEl } from './popup.js'
+import { createPopupOrderEl } from './popupOrder.js'
+import { createPopupCartEl } from './popupCart.js'
 
 async function openOrderPopup(id) {
   const product = await getProductById(id)
-  console.log(product)
   if (product) {
-    createPopupEl(product)
+    createPopupOrderEl(product)
+  }
+}
+
+async function addToCart(id) {
+  const product = await getProductById(id)
+  if (product) {
+    createPopupCartEl(product)
   }
 }
 
@@ -36,7 +43,6 @@ export function createProductEl(product) {
 
   buttonAddCart.addEventListener('click', () => {
     addToCart(product.id)
-    showSuccessNotification()
   })
 
   return productEl

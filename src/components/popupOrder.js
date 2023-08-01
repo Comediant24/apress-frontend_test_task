@@ -1,4 +1,4 @@
-export function createPopupEl(product) {
+export function createPopupOrderEl(product) {
   function closeOrderPopup() {
     orderPopupEl.style.display = 'none'
   }
@@ -15,7 +15,7 @@ export function createPopupEl(product) {
   <button class="popup__close">+</button>
   <div class="popup__content-wrapper">
     <div class="popup__content-left">
-      <img class="popup__img" src="../${product.img}" alt="">
+      <img class="popup__img" src="../${product.img}" alt="${product.title}">
       <p class="popup__price">${price} руб.</p>
     </div>
     <form class="popup__form-textarea">
