@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Wix+Madefor+Display:wght@700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+.cart {
+  display: flex;
+  margin: 40px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+.info {
+  padding-top: 25px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.img {
+  width: 400px;
+  height: 300px;
+}
+.price {
+  padding-top: 20px;
+  font-size: 25px;
+  color: rgb(77, 76, 76);
+}
+.title {
+  width: 500px;
+  color: rgb(77, 76, 76);
+}
+
+.order {
+  font-size: 16px;
+  background-color: rgb(204, 33, 87);
+  padding: 10px 60px 10px 60px;
+  margin-bottom: 7px;
+  color: aliceblue;
+}
+.push {
+  background-color: rgb(234, 234, 234);
+  font-size: 16px;
+  margin-top: 7px;
+  padding: 10px 60px 10px 60px;
+  color: rgba(75, 71, 71, 0.747);
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(31, 29, 29, 0.486);
+
+  cursor: pointer;
+}
+.modal__two {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(31, 29, 29, 0.486);
+
+  cursor: pointer;
+}
+
+.main__modal {
+  position: relative;
+  width: 1400px;
+  height: 600px;
+  background-color: white;
+  margin: auto;
+  border: rgb(180, 177, 177) solid 8px;
+  cursor: default;
+}
+
+.modal__close {
+  cursor: pointer;
+  background-color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  color: rgb(182, 176, 176);
+}
+.modalTwo__close {
+  cursor: pointer;
+  background-color: rgb(241, 241, 241);
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  top: 105px;
+  height: 40px;
+  width: 40px;
+  color: rgb(230, 59, 59);
+}
+.shop__cart {
+  position: relative;
+  right: -70%;
+  bottom: -8%;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(241, 241, 241);
+
+  border-top: rgb(241, 241, 241) solid 10px;
+  border-bottom: rgb(156, 154, 154) solid 10px;
+  cursor: default;
+}
+.modalImg {
+  width: 320px;
+  height: 240px;
+}
+.rowImgInput {
+  display: flex;
+
+  padding: 20px;
+}
+
+.secondBlock {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.boxInput {
+  display: flex;
+  flex-direction: column;
+}
+.boxComInput {
+  display: flex;
+  flex-direction: row;
+  border-left: 5px solid red;
+  padding-bottom: 120px;
+}
+.etitle {
+  padding: 20px;
+  color: rgb(95, 93, 93);
+}
+.eprice {
+  padding-top: 30px;
+  font-size: 30px;
+  color: rgb(204, 33, 87);
+}
+
+.questNum {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 30px;
+  font-size: 18px;
+  color: rgb(95, 93, 93);
+}
+.comOrder {
+  padding-left: 20px;
+  padding-right: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(95, 93, 93);
+}
+.input {
+  width: 750px;
+  height: 200px;
+  background-color: rgb(234, 234, 234);
+}
+.boxInput {
+  margin-top: 25px;
+}
+.inputNum {
+  width: 250px;
+  height: 35px;
+  background-color: rgb(234, 234, 234);
+}
+.butInput {
+  width: 200px;
+  height: 35px;
+  margin-top: 30px;
+  background-color: rgb(204, 33, 87);
+  color: aliceblue;
+  font-size: 18px;
+}
+.shopBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.triplet {
+  display: flex;
+  flex-direction: row;
+}
+.modalImgTwo {
+  width: 220px;
+  height: 180px;
+  padding-top: 50px;
+  padding-left: 25px;
+}
+.boxBask {
+  display: flex;
+  flex-direction: column;
+}
+.pushBask {
+  background-color: rgb(122, 126, 126);
+  font-size: 23px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 40px;
+  color: rgb(252, 253, 253);
+}
+.etitleTwo {
+  max-width: 220px;
+  font-size: 19px;
+  margin-left: 20px;
+  padding-top: 30px;
+  color: rgb(66, 64, 64);
+}
+.epriceTwo {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 22px;
+  color: rgb(110, 105, 105);
+}
+.btnBask {
+  background-color: rgb(204, 33, 87);
+  width: 250px;
+  height: 80px;
+  margin-top: 80px;
+  margin-left: 25px;
+  font-size: 20px;
+  color: white;
+}
