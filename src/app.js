@@ -4,10 +4,10 @@ const mockAPI = {
     return new Promise((resolve, reject) => {
       // Здесь можно добавить имитацию асинхронного запроса
       const products = [
-        { id: 1, name: "Product 1", price: 10, image: "images/1.jpg" },
-        { id: 2, name: "Product 2", price: 20, image: "images/2.jpg" },
-        { id: 3, name: "Product 3", price: 30, image: "images/3.jpg" },
-        { id: 4, name: "Product 4", price: 40, image: "images/4.jpg" }
+        { id: 1, name: "Product 1", price: 10, image: "./assets/images/1.jpg" },
+        { id: 2, name: "Product 2", price: 20, image: "./assets/images/2.jpg" },
+        { id: 3, name: "Product 3", price: 30, image: "./assets/images/3.jpg" },
+        { id: 4, name: "Product 4", price: 40, image: "./assets/images/4.jpg" }
       ];
       
       resolve(products);
