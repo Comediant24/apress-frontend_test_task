@@ -2,6 +2,10 @@
 :root {
   --main-font: "Oswald", "Arial", "sans-serif";
   --default-black: #000000;
+  --black1: #444444;
+  --black2: #111111;
+  --black3: #222222;
+  --grey1: #e6e6e6;
   --default-white: #ffffff;
   --background-page: #e5e5e5;
   --arial: "Arial", "sans-serif", "Verdana";

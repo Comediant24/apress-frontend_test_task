@@ -8,8 +8,12 @@
 @import "reboot.css";
 
 /* blocks */
+@import "./blocks/button.css";
 @import "./blocks/main-header.css";
 @import "./blocks/main-nav.css";
+@import "./blocks/card-list.css";
+@import "./blocks/card-item.css";
+@import "./blocks/card.css";
 
 
 
