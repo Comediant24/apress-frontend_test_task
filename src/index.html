@@ -9,7 +9,7 @@
 <body>
   <header class="main-header main-header__wrapper">
     <a class="main-nav__logo" href="#">
-      <img src="" alt="Логотип Магазин мебели">
+      <img src="" width="300" height="300" alt="Логотип Магазин мебели">
       <span class="visually-hidden">Магазин мебели</span>
     </a>
     <nav class="main-nav main-nav__wrapper">
@@ -30,7 +30,7 @@
         <li class="card-item">
           <div class="card card-item__container">
             <a class="card-item__img-link" href="#" >
-              <img class="card-item__img" src="../assets/images/1.jpg" alt="Изображение дивана">
+              <img class="card-item__img" src="../assets/images/1.jpg" alt="Изображение товара">
             </a>
             <div class="card-item__text">
               <p class="card-item__name">Выкатной детский диван Зайка производитель фабрика Blanes</p>
@@ -44,7 +44,30 @@
         </li>
       </ul>
     </div>
-    <div class="order"></div>
+    <div class="order">
+      <form class="order__form" action="post">
+        <fieldset class="order__title">
+          <h2 class="order__title-text">title-text</h2>
+          <button class="order__close-button" type="button"></button>
+        </fieldset>
+        <fieldset class="order__details">
+          <a class="order__details-link" href="#" >
+            <img class="order__details-img" width="150" height="100" src="../assets/images/1.jpg" alt="Изображение выбранного товара">
+          </a>
+          <span class="order__details-price">11740 руб.</span>
+        </fieldset>
+        <fieldset class="order__comment">
+          <label for="form__comments">RКомментарий к заказу</label>
+          <textarea id="form__comments" name="Comment." type="text" rows="5" cols="26"></textarea>
+        </fieldset>
+        <fieldset class="order__tel">
+          <label class="order__tel-text">Ваш телефон:
+            <input class="order__tel-input" type="tel" name="Tel." placeholder="8 (960) 900-60-90" required="">
+          </label>
+        </fieldset>
+        <button class="order__submit button" type="submit">Отправить</button>
+      </form>
+    </div>
   </main>
 </body>
 <script src="./js/script.js"></script>
