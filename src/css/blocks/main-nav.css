@@ -1,0 +1,17 @@
+.main-nav {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black2);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: inherit;
+  width: 75%;
+}
+
+.main-nav__logo {
+  display: flex;
+  align-items: center;
+}

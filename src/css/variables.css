@@ -1,0 +1,16 @@
+/* variables */
+:root {
+  --main-font: "Oswald", "Arial", "sans-serif";
+  --default-black: #000000;
+  --default-white: #ffffff;
+  --background-page: #e5e5e5;
+  --arial: "Arial", "sans-serif", "Verdana";
+  --tablet-width: 768px;
+  --desktop-width: 1440px;
+  --mobile-width: 320px;
+  --mobile-padding: 20px;
+  --tablet-padding: 30px;
+  --tablet-form-l-padding: 70px;
+  --tablet-form-r-padding: 65px;
+  --desktop-padding: 110px;
+}
