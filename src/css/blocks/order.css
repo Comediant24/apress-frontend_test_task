@@ -2,6 +2,7 @@
   font-family: var(--main-font);
   color: var(--black3);
   font-size: 20px;
+  background-color: var(--grey4);
 }
 
 .order__wrapper {
@@ -19,7 +20,6 @@
   z-index: 2;
   left: calc(50% - 1440px/2);
   top: calc(50% - 450px/2);
-  background-color: white;
 }
 
 .order__form {
@@ -34,6 +34,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+  padding-right: 10px;
 }
 
 .order__title-text {

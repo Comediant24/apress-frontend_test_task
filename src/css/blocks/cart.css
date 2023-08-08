@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 400px;
+  min-height: 280px;
 }
 
 .cart__wrapper--active {
@@ -35,6 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
+  margin-bottom: auto;
 }
 
 .cart__item-link {
@@ -58,6 +60,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 10px;
+  padding-right: 10px;
 }
 
 .cart-item__name {
