@@ -1,6 +1,4 @@
-import { API } from '../../api/products.js';
-
-export const getData = (onSuccess, onFail) => {
+const getData = (onSuccess, onFail) => {
   const fetchData = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(API);

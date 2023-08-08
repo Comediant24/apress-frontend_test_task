@@ -1,9 +1,7 @@
-import {onCardClickHandler} from './card-handlers.js'
-
 const root = document.querySelector('.root');
 const cardTemplate = document.querySelector('#card').content.querySelector('.card-item');
 
-export const renderCards = (cardsValues) => {
+const renderCards = (cardsValues) => {
   const cardFragment = document.createDocumentFragment();
 
   cardsValues.forEach((card) => {

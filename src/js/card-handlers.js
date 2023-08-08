@@ -1,11 +1,6 @@
-import {onOrderClickHandler } from './order-handlers.js';
-import { onCartClickHandler } from './cart-handlers.js';
-
-import { API } from '../../api/products.js';
-
 const dataAPI = API.products;
 
-export const onCardClickHandler = (evt) => {
+const onCardClickHandler = (evt) => {
   if (Array.from(evt.target.classList).includes('card-item__order-button')) {
     const orderModal = document.querySelector('.order');
     orderModal.classList.add('order__wrapper--active')
