@@ -1,0 +1,46 @@
+.order {
+  font-family: var(--arial);
+  color: var(--black3);
+  font-size: 20px;
+}
+
+.order__wrapper {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.order__form {
+  width: 100%;
+}
+
+.order__form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.order__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__title-text {
+  margin: 0;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.order__close-button {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../../assets/images/order-close-button.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+

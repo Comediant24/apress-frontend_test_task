@@ -2,3 +2,9 @@
   font-family: var(--arial);
   color: var(--black3);
 }
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 220px;
+}
