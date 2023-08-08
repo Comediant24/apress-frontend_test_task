@@ -1,8 +1,6 @@
 import { renderCards } from './cards.js';
-import { API } from '../../api/products.js';
+import { getData } from './api-fetch.js';
 
-const dataAPI = API.products;
-
-renderCards(dataAPI)
+getData(renderCards);
 
 

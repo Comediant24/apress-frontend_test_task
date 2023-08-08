@@ -1,3 +1,5 @@
+import {onCardClickHandler} from './card-handlers.js'
+
 const root = document.querySelector('.root');
 const cardTemplate = document.querySelector('#card').content.querySelector('.card-item');
 
@@ -14,7 +16,11 @@ export const renderCards = (cardsValues) => {
     cardImage.alt = card.title;
     cardName.textContent = card.title;
     cardPrice.textContent = `${card.price} руб.`;
+
+    cardItem.dataset.id = card.id;
     cardFragment.appendChild(cardItem);
+
+    cardItem.addEventListener('click', onCardClickHandler);
   });
 
   let ul = document.createElement('ul');

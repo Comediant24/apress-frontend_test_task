@@ -26,26 +26,7 @@
   </header>
   <main>
     <div class="root"></div>
-  </main>
-  <template id="card">
-    <li class="card-item card-item__container">
-      <div class="card card__container">
-        <a class="card-item__img-link" href="#" >
-          <img class="card-item__img" src="../assets/images/1.jpg" alt="Изображение товара">
-        </a>
-        <div class="card-item__text">
-          <p class="card-item__name">Выкатной детский диван Зайка производитель фабрика Blanes</p>
-          <span class="card-item__price">11740 руб.</span>
-        </div>
-        <div class="card-item__buttons">
-          <button class="card-item__order-button button" type="button">Заказать</button>
-          <button class="card-item__cart-button button" type="button">В корзину</button>
-        </div>
-      </div>
-    </li>
-  </template>
-  <template id="order">
-    <div class="order order__wrapper order__wrapper--active">
+    <div class="order order__wrapper">
       <form class="order__form" action="post">
         <fieldset class="order__title">
           <h2 class="order__title-text">Выкатной детский диван Зайка производитель фабрика Blanes</h2>
@@ -75,9 +56,7 @@
         <button class="order__submit button" type="submit">Отправить</button>
       </form>
     </div>
-  </template>
-  <template id="cart">
-    <div class="cart cart__wrapper cart__wrapper--active">
+    <div class="cart cart__wrapper">
       <div class="cart__notification">
         <p>Вы добавили в корзину:</p>
       </div>
@@ -95,6 +74,23 @@
       </div>
       <a class="cart__button button">Перейти в корзину</a>
     </div>
+  </main>
+  <template id="card">
+    <li class="card-item card-item__container">
+      <div class="card card__container">
+        <a class="card-item__img-link" href="#" >
+          <img class="card-item__img" src="../assets/images/1.jpg" alt="Изображение товара">
+        </a>
+        <div class="card-item__text">
+          <p class="card-item__name">Выкатной детский диван Зайка производитель фабрика Blanes</p>
+          <span class="card-item__price">11740 руб.</span>
+        </div>
+        <div class="card-item__buttons">
+          <button class="card-item__order-button button" type="button">Заказать</button>
+          <button class="card-item__cart-button button" type="button">В корзину</button>
+        </div>
+      </div>
+    </li>
   </template>
 </body>
 <script src="./js/script.js" type="module"></script>
